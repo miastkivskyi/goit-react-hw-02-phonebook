@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin-left: 40px;
+}
+
+.button {
+  width: 100px;
+  margin-top: 25px;
+}
+
+.inputForm {
+  height: 25px;
+}
+
+.titleForm {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+}
