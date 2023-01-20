@@ -6,19 +6,16 @@ class ContactForm extends React.Component {
   state = {
     name: '',
     number: '',
-    id: '',
   };
 
   handleChange = event => {
     const { value, name } = event.currentTarget;
     this.setState({ [name]: value });
-    this.setState({ id: nanoid() });
   };
 
   handleSubmit = e => {
     e.preventDefault();
-
-    this.props.onSubmit(this.state);
+    this.props.onSubmit({ id: nanoid(), ...this.state });
     this.setState({ name: '', number: '' });
   };
 

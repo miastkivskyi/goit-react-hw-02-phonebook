@@ -21,10 +21,10 @@ class App extends React.Component {
 
     const newContact = { name, id, number };
     const normalizedFilter = name.toLowerCase();
-    const repeatedName = contacts.filter(contact =>
-      contact.name.toLowerCase().includes(normalizedFilter)
-    );
-    repeatedName.length
+
+    const repeatedName = Object.values(contacts).map(contact => contact.name);
+
+    repeatedName.includes(normalizedFilter)
       ? alert(`${name} is already in contacts`)
       : this.setState(prevState => ({
           contacts: [newContact, ...prevState.contacts],
