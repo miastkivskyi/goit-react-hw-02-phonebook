@@ -19,7 +19,7 @@ class ContactForm extends React.Component {
     e.preventDefault();
 
     this.props.onSubmit(this.state);
-    this.setState({ name: '', number: ' ' });
+    this.setState({ name: '', number: '' });
   };
 
   render() {

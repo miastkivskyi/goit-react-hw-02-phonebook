@@ -1,20 +1,26 @@
-.form {
+.list {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+}
+
+.item {
+  display: flex;
+  align-items: baseline;
   width: 350px;
-  margin-left: 40px;
+  justify-content: space-between;
+}
+.contact {
+  margin-bottom: 0px;
+  font-weight: 500;
+  margin-right: 20px;
 }
 
 .button {
   font-size: 14px;
-  width: 100px;
   margin-right: 10px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  margin-top: 25px;
-  margin-bottom: 15px;
   padding: 5px;
 }
 .button:hover {
@@ -22,16 +28,4 @@
   outline: auto;
   outline-color: transparent;
   outline-style: solid;
-}
-
-.inputForm {
-  height: 25px;
-  width: 330px;
-}
-
-.titleForm {
-  margin-bottom: 5px;
-  margin-top: 10px;
-  font-size: 20px;
-  margin-left: 0;
 }
